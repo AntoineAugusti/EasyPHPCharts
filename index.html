@@ -48,7 +48,17 @@
           var ctx = document.getElementById("examplePie").getContext("2d");
           new Chart(ctx).Pie(data,null);
       };</script>
+        
 
+        <h3>A doughnut chart</h3>
+        <script src="https://gist.github.com/AntoineAugusti/7710149.js"></script>
+        <div class="chartContainer"><canvas class="chart" id="exampleDoughnut" width="500" height="300"></canvas></div><div class="containerChartLegend"><h2>Legend</h2><ul class="chartLegend"><li><div class="colorBlock" style="background-color:#FF6600"></div>Work<span class="floatRight">2 %</span></li><li><div class="colorBlock" style="background-color:#4081BD"></div>Eat<span class="floatRight">10 %</span></li><li><div class="colorBlock" style="background-color:#64992C"></div>Sleep<span class="floatRight">16 %</span></li><li><div class="colorBlock" style="background-color:#956188"></div>Listen to music<span class="floatRight">30 %</span></li><li><div class="colorBlock" style="background-color:#DC6D7F"></div>Code<span class="floatRight">42 %</span></li></ul></div><div class="clearBoth"></div><script>var data = [{ value:2, color:"#FF6600"},{ value:10, color:"#4081BD"},{ value:16, color:"#64992C"},{ value:30, color:"#956188"},{ value:42, color:"#DC6D7F"},];
+        graphiqueexampleDoughnut();
+
+        function graphiqueexampleDoughnut(){
+            var ctx = document.getElementById("exampleDoughnut").getContext("2d");
+            new Chart(ctx).Doughnut(data,null);
+        };</script>
 
       </section>
 
