@@ -1,0 +1,44 @@
+.chartContainer 
+{
+	float: left;
+	width: 500px;
+}
+.containerChartLegend
+{
+	float: right;
+	width: 500px;
+}
+canvas.chart
+{
+	margin: 20px auto;
+	display: block;
+}
+canvas.chart:after
+{
+	clear: both;
+}
+.colorBlock
+{
+	display: inline-block;
+	width: 45px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+ul.chartLegend
+{
+	list-style: none;
+	margin-bottom: 30px;
+}
+ul.chartLegend li
+{
+	margin-bottom: 5px;
+}
+.floatRight
+{
+	float: right;
+}
+.clearBoth
+{
+	clear: both;
+}
