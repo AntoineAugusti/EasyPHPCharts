@@ -59,7 +59,7 @@
             var ctx = document.getElementById("exampleDoughnut").getContext("2d");
             new Chart(ctx).Doughnut(data,null);
         };</script>
-        
+
 
         <h3>A bar chart, with multiple datasets</h3>
         <script src="https://gist.github.com/AntoineAugusti/7710176.js"></script>
@@ -81,6 +81,20 @@
             new Chart(ctx).Bar(data,{scaleFontColor : "#767C8D",scaleGridLineColor : "rgba(0,0,0,.2)"});
         };</script>
 
+        <h3>A radar chart</h3>
+        <script src="https://gist.github.com/AntoineAugusti/7710194.js"></script>
+        <canvas class="chart" id="exampleradar" width="1000" height="300"></canvas><div class="clearBoth"></div><script>var data = {labels:["A","B","C","D","E",], datasets:[{
+                fillColor: "rgba(247,70,74,0.7)",
+                strokeColor: "rgba(247,70,74,1)",
+                pointColor: "rgba(247,70,74,1)",
+                pointStrokeColor:"#FFF",
+                data:[20,55,16,30,42,]},]};
+        graphiqueexampleradar();
+
+        function graphiqueexampleradar(){
+            var ctx = document.getElementById("exampleradar").getContext("2d");
+            new Chart(ctx).Radar(data,null);
+        };</script>
       </section>
 
   <footer>
