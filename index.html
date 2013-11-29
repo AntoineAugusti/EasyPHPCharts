@@ -59,6 +59,27 @@
             var ctx = document.getElementById("exampleDoughnut").getContext("2d");
             new Chart(ctx).Doughnut(data,null);
         };</script>
+        
+
+        <h3>A bar chart, with multiple datasets</h3>
+        <script src="https://gist.github.com/AntoineAugusti/7710176.js"></script>
+        <div class="chartContainer"><canvas class="chart" id="examplebar" width="500" height="300"></canvas></div><div class="containerChartLegend"><h2>Legend</h2><ul class="chartLegend"><li><div class="colorBlock" style="background-color:#415E9B"></div>Annie</li><li><div class="colorBlock" style="background-color:#C50000"></div>Marc</li></ul></div><div class="clearBoth"></div><script>var data = {labels:["01/01","01/02","01/03","01/04","01/05",], datasets:[{
+                fillColor: "rgba(65,94,155,0.7)",
+                strokeColor: "rgba(65,94,155,1)",
+                pointColor: "rgba(65,94,155,1)",
+                pointStrokeColor:"#FFF",
+                data:[2,10,16,30,42,]},{
+                fillColor: "rgba(197,0,0,0.7)",
+                strokeColor: "rgba(197,0,0,1)",
+                pointColor: "rgba(197,0,0,1)",
+                pointStrokeColor:"#FFF",
+                data:[42,30,16,10,2,]},]};
+        graphiqueexamplebar();
+
+        function graphiqueexamplebar(){
+            var ctx = document.getElementById("examplebar").getContext("2d");
+            new Chart(ctx).Bar(data,{scaleFontColor : "#767C8D",scaleGridLineColor : "rgba(0,0,0,.2)"});
+        };</script>
 
       </section>
 
