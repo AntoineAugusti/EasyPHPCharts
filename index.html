@@ -14,7 +14,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Easyphpcharts by AntoineAugusti</title>
+    <title>EasyPHPCharts by AntoineAugusti</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <div class="inner">
 
         <header>
-          <h1>Easyphpcharts</h1>
+          <h1>EasyPHPCharts</h1>
           <h2></h2>
       </header>
 
@@ -94,6 +94,15 @@
         function graphiqueexampleradar(){
             var ctx = document.getElementById("exampleradar").getContext("2d");
             new Chart(ctx).Radar(data,null);
+        };</script>
+        <h3>A polar chart</h3>
+        <script src="https://gist.github.com/AntoineAugusti/7710218.js"></script>
+        <canvas class="chart" id="examplepolar" width="1000" height="300"></canvas><div class="clearBoth"></div><script>var data = [{ value:20, color:"#F7464A"},{ value:55, color:"#E2EAE9"},{ value:16, color:"#D4CCC5"},{ value:30, color:"#949FB1"},{ value:42, color:"#4D5360"},];
+        graphiqueexamplepolar();
+
+        function graphiqueexamplepolar(){
+            var ctx = document.getElementById("examplepolar").getContext("2d");
+            new Chart(ctx).PolarArea(data,null);
         };</script>
       </section>
 
