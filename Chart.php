@@ -248,7 +248,7 @@ class Chart
 
 			return $html;
 		}
-		elseif ($this->type == 'bar' AND (!empty($this->legend) OR !empty($this->legendData)) AND !empty($this->data))
+		elseif (in_array($this->type, array('bar', 'line')) AND (!empty($this->legend) OR !empty($this->legendData)) AND !empty($this->data))
 		{
 			if (!empty($this->legendData))
 				$legends = $this->legendData;
